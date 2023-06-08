@@ -19,8 +19,8 @@ let currentFontSize = 16
 
 idInputElement.focus()
 
-const IdRegex = new RegExp('^[a-z|0-9|_|-]{5,20}$')
-const pwRegex = new RegExp('^[A-Z|a-z|0-9]{8,16}$')
+const IdRegex = /^[a-z0-9_-]{5,20}$/
+const pwRegex = /^[A-Za-z0-9]{8,16}$/
 
 const idValidation = () => {
     const inputValue = idInputElement.value
